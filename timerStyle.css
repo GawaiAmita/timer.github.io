@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+
+    padding: 0;
+
+    font-family: sans-serif;
+
+    box-sizing: border-box;
+
+    font-family: 'fire sans', sans-serif;
+}
+
+
+/* to style the body  */
+body {
+
+    background-image: url(sunrise3.jpg);
+
+    background-position: right;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    color: linear-gradient(to bottom,  rgb(32, 1, 145), rgb(0, 0, 9));
+
+    margin-bottom: 9rem;
+
+}
+ 
+
+/* to style the heading - stopwatch */
+.heading {
+
+    font-size: 3rem;
+
+    font-weight: 400;
+
+    margin-top: 1.8rem;
+
+    text-align: center;
+
+    background-image: linear-gradient(to bottom, rgb(32, 1, 145), rgb(0, 0, 9));
+
+    background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
+
+/* to style the box containing timer and buttond */
+.watch {
+
+    text-align: center;
+
+    background-color: transparent;
+
+    width: 50%;
+
+    margin: 2rem auto;
+
+    padding: -3rem -2rem;
+
+    margin-top: 125px;
+
+    border-radius: 1rem;
+
+}
+
+
+/* to style the timer */
+.time {
+
+    position: center;
+
+    display: inline-block;
+
+    font-size: 5rem;
+
+    font-weight: 300;
+
+    margin-bottom: 6rem;
+
+}
+
+
+/* to style the timer with animations */
+.time::before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 150px;
+
+    background-color: transparent;
+
+    z-index: -2;
+
+    border-radius: 25%;
+
+    margin-top: -1.5rem;
+
+    margin-left: -3rem;
+
+    animation-name: shine;
+
+    animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+
+    box-shadow: #c61d74;
+
+}
+
+ 
+/* to get the animations effect to timer */
+@keyframes shine{
+
+    0%, 100%{
+        box-shadow: 0px 0px 32px -12px azure;
+    }
+
+    50%{
+        box-shadow: 0px 0px 32px 3px  rgb(3, 33, 99);
+    }
+
+}
+
+
+/* to style the buttons */
+.buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+/* to give effects to buttons */
+.buttons button {
+
+    appearance: none;
+
+    background: none;
+
+    border: none;
+
+    outline: none;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 1.125rem;
+
+    background-image: linear-gradient(to right, rgb(207, 77, 2), rgb(200, 19, 19));
+
+    background-color:rgb(179, 34, 107) ;
+
+    margin: 0 0.5rem;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+
+}
+
+ 
+
+/* hover opacity of buttons */
+button:hover {
+
+    opacity: 0.7;
+
+}
+
+ 
+/* color of buttons in active state or when cursor is on buttons */
+button:active {
+
+    background-color: rgb(179, 34, 107);
+
+}
+
